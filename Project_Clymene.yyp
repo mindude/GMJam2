@@ -63,6 +63,14 @@
             }
         },
         {
+            "Key": "30f45f02-0f7c-4929-974c-6aa3da45f9fa",
+            "Value": {
+                "id": "9595776b-3619-4736-815c-0828e5ff9a91",
+                "resourcePath": "scripts\\script_0\\script_0.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "51432245-70e2-4b1d-9354-b18cb0629df6",
             "Value": {
                 "id": "ea69b4f5-8742-4474-af86-b15c67cf14e6",
@@ -119,6 +127,14 @@
             }
         },
         {
+            "Key": "a9188620-a624-4a5a-83ae-a1b53faf038b",
+            "Value": {
+                "id": "bac68c91-94a9-491c-afc3-1c00677a3e32",
+                "resourcePath": "options\\linux\\options_linux.yy",
+                "resourceType": "GMLinuxOptions"
+            }
+        },
+        {
             "Key": "cc98d028-7bdd-4680-85f3-c87a7baa481e",
             "Value": {
                 "id": "49e1cab6-4587-4c16-b125-cd513daee6d8",
@@ -159,6 +175,14 @@
             }
         },
         {
+            "Key": "f418569b-3bdd-4706-a0e4-364317f54032",
+            "Value": {
+                "id": "5331adf8-e019-4b7f-8d52-44a95cee56ad",
+                "resourcePath": "options\\mac\\options_mac.yy",
+                "resourceType": "GMMacOptions"
+            }
+        },
+        {
             "Key": "fbdc8292-c7c0-4c43-9e55-d0b772df1a2f",
             "Value": {
                 "id": "c1000a5b-a8fd-4cbb-9d45-56670180d496",
@@ -176,7 +200,7 @@
         }
     ],
     "script_order": [
-        
+        "30f45f02-0f7c-4929-974c-6aa3da45f9fa"
     ],
     "tutorial": ""
 }
