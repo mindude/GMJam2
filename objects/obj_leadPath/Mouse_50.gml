@@ -9,7 +9,8 @@ if(global.pathEnabled){
 			if(!(position_meeting(mouse_x - 50, mouse_y, last_path) || 
 				position_meeting(mouse_x + 50, mouse_y, last_path) || 
 				position_meeting(mouse_x, mouse_y + 50, last_path) || 
-				position_meeting(mouse_x, mouse_y - 50, last_path)))
+				position_meeting(mouse_x, mouse_y - 50, last_path)) || 
+				position_meeting(mouse_x, mouse_y, obj_obstacle))
 			{
 				sprite_index = spr_invalidPath;
 			}
