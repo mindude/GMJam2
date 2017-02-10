@@ -23,3 +23,7 @@ if(sprite_index == spr_invalidPath)
 	y = ds_list_find_value(obj_character.steps, ds_list_size(obj_character.steps)-1).y;
 }
 sprite_index = spr_leadPath;
+if(obj_character.has_key)
+{
+	obj_character.chosen_key = true;
+}

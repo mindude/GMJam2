@@ -45,7 +45,7 @@
             "modelName": "GMMoment",
             "mvc": "1.0",
             "name": "",
-            "description": "",
+            "description": "End Timeline",
             "evnt": {
                 "id": "b3dfab24-32df-4dc6-9245-854d04da2327",
                 "modelName": "GMEvent",
