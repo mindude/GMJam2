@@ -3,3 +3,5 @@
 face_Direction = "right";
 following_Path = true;
 is_Walking = false;
+officer_x = x;
+officer_y = y;

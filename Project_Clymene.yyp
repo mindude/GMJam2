@@ -119,6 +119,14 @@
             }
         },
         {
+            "Key": "4d280014-6a27-451b-a11e-703e65fe8c20",
+            "Value": {
+                "id": "08d64647-37f1-4a04-a9bc-da9b5462191f",
+                "resourcePath": "scripts\\scr_Officer_LineOfSight\\scr_Officer_LineOfSight.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "51432245-70e2-4b1d-9354-b18cb0629df6",
             "Value": {
                 "id": "ea69b4f5-8742-4474-af86-b15c67cf14e6",
@@ -134,14 +142,14 @@
                 "resourceType": "GMObject"
             }
         },
-		{
-			"Key": "52c2ed09-dccf-4a41-b393-56179b4ffc75",
+        {
+            "Key": "52c2ed09-dccf-4a41-b393-56179b4ffc75",
             "Value": {
                 "id": "e5c9b37d-6724-4265-90c8-5348331778ad",
                 "resourcePath": "sprites\\sprite_policePath\\sprite_policePath.yy",
                 "resourceType": "GMSprite"
-			}
-		},
+            }
+        },
         {
             "Key": "556b1d05-1368-4ec7-9dbb-61ad565235c7",
             "Value": {
@@ -384,7 +392,7 @@
         }
     ],
     "script_order": [
-        
+        "4d280014-6a27-451b-a11e-703e65fe8c20"
     ],
     "tutorial": ""
 }

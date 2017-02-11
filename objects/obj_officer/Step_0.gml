@@ -1,6 +1,11 @@
 /// @description Insert descripis_tion here
 // You can write your code in this editor
+
 if(is_Walking == true){
+	residue_x = x mod 50;
+	residue_y = y mod 50;
+	if(residue_x == 0 && residue_y == 0) officer_x = x; officer_y = y;
+	scr_Officer_LineOfSight();
 	if(following_Path == true){
 		if (face_Direction == "left"){
 			if(place_meeting(x-52,y,obj_officerPath)){
@@ -72,4 +77,8 @@ if(is_Walking == true){
 			}
 		}
 	}
+}
+else{
+	vspeed = 0;
+	hspeed = 0;
 }
