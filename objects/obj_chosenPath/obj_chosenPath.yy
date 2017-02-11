@@ -5,12 +5,12 @@
     "name": "obj_chosenPath",
     "eventList": [
         {
-            "id": "b7ab9e7a-4227-47f6-963d-88307538d8bb",
+            "id": "06149863-3352-45b3-af15-048e9255fd35",
             "modelName": "GMEvent",
             "mvc": "1.0",
             "IsDnD": false,
             "collisionObjectId": "00000000-0000-0000-0000-000000000000",
-            "enumb": 53,
+            "enumb": 5,
             "eventtype": 6,
             "m_owner": "45678ba7-810b-499b-ab8c-66a3205a92f6"
         }
