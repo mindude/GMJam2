@@ -1,6 +1,6 @@
 /// @description Creating variables
 global.pathEnabled = false;
-orders = []; //Sequence of commands
+orders = ds_list_create(); //Sequence of commands
 steps = ds_list_create(); //Sequence of steps
 tempSteps = ds_list_create(); //Sequence of steps
 has_key = false;
