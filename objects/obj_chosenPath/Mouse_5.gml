@@ -20,4 +20,11 @@ if(!mouse_check_button(mb_left)){
 	ds_list_add(obj_character.tempSteps, inst);
 	obj_leadPath.x = inst.x;
 	obj_leadPath.y = inst.y;
+	with(obj_key)
+	{
+		if(!(position_meeting(x, y, obj_path) || position_meeting(x, y, obj_chosenPath)))
+		{
+			obj_character.chosen_key = false;
+		}
+	}
 }

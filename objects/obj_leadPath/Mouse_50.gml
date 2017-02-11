@@ -11,7 +11,7 @@ if(global.pathEnabled){
 				position_meeting(mouse_x, mouse_y + 50, last_path) || 
 				position_meeting(mouse_x, mouse_y - 50, last_path)) || 
 				position_meeting(mouse_x, mouse_y, obj_obstacle) || 
-				(position_meeting(mouse_x, mouse_y, obj_door) && !obj_character.has_key))
+				(position_meeting(mouse_x, mouse_y, obj_door) && !(obj_character.has_key || obj_character.chosen_key)))
 			{
 				sprite_index = spr_invalidPath;
 			}
