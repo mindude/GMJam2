@@ -8,22 +8,22 @@ with(obj_character){
 	{
 		if(x > ds_list_find_value(steps, indexStep).x)
 		{
-			hspeed = -2;
+			hspeed = -5;
 			vspeed = 0;
 		}
 		else if(x < ds_list_find_value(steps, indexStep).x)
 		{
-			hspeed = 2;
+			hspeed = 5;
 			vspeed = 0;
 		}
 		else if(y > ds_list_find_value(steps, indexStep).y)
 		{
-			vspeed = -2;
+			vspeed = -5;
 			hspeed = 0;
 		}
 		else if(y < ds_list_find_value(steps, indexStep).y)
 		{
-			vspeed = 2;
+			vspeed = 5;
 			hspeed = 0;
 		}
 		indexStep += 1;
