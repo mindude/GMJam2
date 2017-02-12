@@ -397,7 +397,9 @@
                 "id": "e94db8f0-850c-48ca-9843-39d700cc3caa",
                 "resourcePath": "timelines\\d3X2\\d3X2.yy",
                 "resourceType": "GMTimeline"
-
+			}
+		},
+		{
             "Key": "767dc413-1388-4445-bb78-f9c1a668d4ad",
             "Value": {
                 "id": "dc4432e9-f8f2-4d0a-8175-e99d70661a2d",
@@ -519,13 +521,14 @@
             }
         },
         {
-
             "Key": "a01d9c9b-db20-4e15-965f-8776eea52e68",
             "Value": {
                 "id": "048c33af-5d6e-4345-9454-ab4af6767f8c",
                 "resourcePath": "timelines\\r3X2\\r3X2.yy",
                 "resourceType": "GMTimeline"
-
+			}
+		},
+		{
             "Key": "9ff27a20-41f3-45d6-b29e-28f745f02008",
             "Value": {
                 "id": "6f321794-1fd8-4b45-8bf6-b7e4387216cc",
@@ -621,7 +624,9 @@
                 "id": "2f8e718f-4574-43bb-8c6a-86f8696dee34",
                 "resourcePath": "timelines\\l1X2\\l1X2.yy",
                 "resourceType": "GMTimeline"
-
+			}
+		},
+		{
             "Key": "be9a14c8-87bc-4b33-8fb0-0ec4aa4fc5e6",
             "Value": {
                 "id": "53a1b917-a321-429c-9f96-34b7356e9b4c",
