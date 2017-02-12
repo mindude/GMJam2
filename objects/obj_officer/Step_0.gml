@@ -8,15 +8,15 @@ if(is_Walking == true){
 	scr_Officer_LineOfSight();
 	if(following_Path == true){
 		if (face_Direction == "left"){
-			if(place_meeting(x-52,y,obj_officerPath)){
+			if(place_meeting(x-55,y,obj_officerPath)){
 				vspeed = 0;
-				hspeed = -2;
+				hspeed = -5;
 			}
 			else{
-				if(place_meeting(x,y-52,obj_officerPath)){
+				if(place_meeting(x,y-55,obj_officerPath)){
 					face_Direction = "up";
 				}
-				else if(place_meeting(x,y+52,obj_officerPath)){
+				else if(place_meeting(x,y+55,obj_officerPath)){
 					face_Direction = "down";
 
 				}
@@ -26,15 +26,15 @@ if(is_Walking == true){
 			}
 		}
 		else if (face_Direction == "right"){
-			if(place_meeting(x+52,y,obj_officerPath)){
+			if(place_meeting(x+55,y,obj_officerPath)){
 				vspeed = 0;
-				hspeed = 2;
+				hspeed = 5;
 			}
 			else{
-				if(place_meeting(x,y-52,obj_officerPath)){
+				if(place_meeting(x,y-55,obj_officerPath)){
 					face_Direction = "up";
 				}
-				else if(place_meeting(x,y+52,obj_officerPath)){
+				else if(place_meeting(x,y+55,obj_officerPath)){
 					face_Direction = "down";
 				}
 				else{
@@ -43,15 +43,15 @@ if(is_Walking == true){
 			}
 		}
 		else if (face_Direction == "up"){
-			if(place_meeting(x,y-52,obj_officerPath)){
+			if(place_meeting(x,y-55,obj_officerPath)){
 				hspeed = -0;
-				vspeed = -2;
+				vspeed = -5;
 			}
 			else{
-				if(place_meeting(x-52,y,obj_officerPath)){
+				if(place_meeting(x-55,y,obj_officerPath)){
 					face_Direction = "left";
 				}
-				else if(place_meeting(x+52,y,obj_officerPath)){
+				else if(place_meeting(x+55,y,obj_officerPath)){
 					face_Direction = "right";
 				}
 				else{
@@ -60,15 +60,15 @@ if(is_Walking == true){
 			}
 		}
 		else if (face_Direction == "down"){
-			if(place_meeting(x,y+52,obj_officerPath)){
+			if(place_meeting(x,y+55,obj_officerPath)){
 				hspeed = 0;
-				vspeed = +2;
+				vspeed = +5;
 			}
 			else{
-				if(place_meeting(x-52,y,obj_officerPath)){
+				if(place_meeting(x-55,y,obj_officerPath)){
 					face_Direction = "left";
 				}
-				else if(place_meeting(x+52,y,obj_officerPath)){
+				else if(place_meeting(x+55,y,obj_officerPath)){
 					face_Direction = "right";
 				}
 				else{

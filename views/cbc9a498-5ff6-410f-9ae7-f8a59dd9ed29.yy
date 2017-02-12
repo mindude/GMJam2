@@ -16,7 +16,8 @@
         "f8491eb8-5a86-4d91-9ad6-60b1c1d753b8",
         "52c2ed09-dccf-4a41-b393-56179b4ffc75",
         "1dc98349-c9e8-4ecb-ad6c-e4f3cf298f8d",
-        "fa403ffb-cb01-4714-a3e0-ae0cae0b83b9"
+        "fa403ffb-cb01-4714-a3e0-ae0cae0b83b9",
+        "7f106ae1-011b-4404-9669-9ec74a20b979"
     ],
     "filterType": "GMSprite",
     "folderName": "Testing_Sprites",
