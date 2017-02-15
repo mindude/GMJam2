@@ -82,3 +82,8 @@ else{
 	vspeed = 0;
 	hspeed = 0;
 }
+
+if(vspeed > 0) {sprite_index = spr_Police_Down; image_xscale = 1;}
+else if(vspeed < 0) {sprite_index = spr_Police_Up; image_xscale = 1;}
+else if(hspeed > 0) {sprite_index = spr_Police_Side; image_xscale = 1;}
+else if(hspeed < 0) {sprite_index = spr_Police_Side; image_xscale = -1;}

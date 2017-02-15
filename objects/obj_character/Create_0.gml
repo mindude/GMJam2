@@ -7,3 +7,4 @@ has_key = false;
 chosen_key = false;
 ds_list_add(tempSteps, instance_position(obj_character.x, obj_character.y, obj_path));
 moving = false;
+image_speed = 1
