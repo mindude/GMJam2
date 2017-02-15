@@ -281,8 +281,8 @@
                     "m_originalParentID": "00000000-0000-0000-0000-000000000000",
                     "m_serialiseFrozen": false,
                     "name": "inst_639883E",
-                    "x": 1100,
-                    "y": 1150,
+                    "x": 350,
+                    "y": 1550,
                     "IsDnD": false,
                     "colour": {
                         "Value": 4294967295
@@ -305,14 +305,14 @@
                     "m_originalParentID": "00000000-0000-0000-0000-000000000000",
                     "m_serialiseFrozen": false,
                     "name": "inst_72182D00",
-                    "x": 975,
-                    "y": 1475,
+                    "x": 425,
+                    "y": 1425,
                     "IsDnD": false,
                     "colour": {
                         "Value": 4294967295
                     },
-                    "creationCodeFile": "",
-                    "creationCodeType": "",
+                    "creationCodeFile": "InstanceCreationCode_inst_72182D00.gml",
+                    "creationCodeType": ".gml",
                     "inheritCode": false,
                     "name_with_no_file_rename": "inst_72182D00",
                     "objId": "d9746e18-2eea-4005-a62a-5f2b76dcf1e8",

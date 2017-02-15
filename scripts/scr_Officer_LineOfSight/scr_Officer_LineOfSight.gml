@@ -1,7 +1,7 @@
 sight_detector_1 = 0;
 sight_detector_2 = 0;
 
-officer_x = officer_x
+officer_x = officer_x 
 officer_y = officer_y
 show_debug_message(officer_x)
 show_debug_message(officer_y)

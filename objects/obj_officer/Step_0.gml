@@ -4,7 +4,7 @@
 if(is_Walking == true){
 	residue_x = (x-25) mod 50;
 	residue_y = (y-25) mod 50;
-	if(residue_x == 0 && residue_y == 0){officer_x = (x-25); officer_y = (y-25);}
+	if(residue_x == 0 && residue_y == 0){officer_x = x; officer_y = y;}
 	scr_Officer_LineOfSight();
 	if(following_Path == true){
 		if (face_Direction == "left"){
