@@ -1,19 +1,19 @@
 /// @description Delete path
-if(!mouse_check_button(mb_left)){
+if(!mouse_check_button(mb_left) && !obj_character.moving){
 	inst = ds_list_find_value(obj_character.steps, ds_list_size(obj_character.steps) - 1);
 	while(inst.x != x || inst.y != y)
 	{
 		instance_destroy(inst);
 		ds_list_delete(obj_character.steps, ds_list_size(obj_character.steps)-1);
 		//show_debug_message(ds_list_find_value(obj_character.orders, ds_list_size(obj_character.orders)-1));
-		while(ds_list_find_value(obj_character.orders, ds_list_size(obj_character.orders)-1) == "wait")
+		while(ds_list_find_value(obj_character.orders, ds_list_size(obj_character.orders)-1) != "step")
 		{
 			ds_list_delete(obj_character.orders, ds_list_size(obj_character.orders)-1);
 		}
 		ds_list_delete(obj_character.orders, ds_list_size(obj_character.orders)-1);
 		if(ds_list_size(obj_character.steps) == 0)
 		{
-			inst = instance_position(obj_character.x, obj_character.y, obj_chosenPath);
+			inst = instance_position(obj_character.x - 25, obj_character.y - 25, obj_chosenPath);
 			break;
 		}
 		inst = ds_list_find_value(obj_character.steps, ds_list_size(obj_character.steps) - 1);

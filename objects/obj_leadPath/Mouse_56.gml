@@ -1,5 +1,5 @@
 /// @description End path creation
-if(global.pathEnabled)
+if(global.pathEnabled && !obj_character.moving)
 {
 	global.pathEnabled = false;
 	for(i = 1; i < ds_list_size(obj_character.tempSteps); i++)

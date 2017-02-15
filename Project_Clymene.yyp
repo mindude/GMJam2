@@ -647,6 +647,14 @@
             }
         },
         {
+            "Key": "96ab762c-524c-496d-a514-ba64f9d8fdff",
+            "Value": {
+                "id": "6dbc61af-6ad4-4335-8b31-dafb2ab10382",
+                "resourcePath": "sprites\\spr_Curtain\\spr_Curtain.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "971606e9-0365-4adc-87dc-c4e63bafa327",
             "Value": {
                 "id": "8b360fca-f466-4d30-8142-603a9a902f83",

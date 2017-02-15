@@ -1,5 +1,5 @@
 /// @description Creating a path
-if(global.pathEnabled){
+if(global.pathEnabled && !obj_character.moving){
 	if(cursor_x != (mouse_x div 50) * 50 || cursor_y != (mouse_y div 50) * 50)
 	{
 		if(!position_meeting(mouse_x, mouse_y, obj_path))

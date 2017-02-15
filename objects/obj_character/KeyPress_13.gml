@@ -1,5 +1,5 @@
 /// @description Walking path
-if(!moving){
+if(!moving && !mouse_check_button(mb_left)){
 	camera_set_view_target(view_camera[0], obj_character);
 	indexOrder = 0;
 	indexStep = 0;
