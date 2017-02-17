@@ -1,4 +1,6 @@
 /// @description Insert description here
+if(x-25 == obj_Finish.x && y-25 == obj_Finish.y) show_debug_message("Finished!")
+
 if(moving)
 {
 	if(camera_get_view_speed_y(view_camera[0]) <= 2)

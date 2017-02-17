@@ -116,6 +116,9 @@ if(obj_character.moving)
 			obj_character.y = obj_characterStart.y + 25;
 			obj_key.image_alpha = 1;
 			obj_door.image_alpha = 1;
+			obj_GrayDoorKeyhole.image_alpha = 1;
+			obj_GrayDoorLeft.image_alpha = 1;
+			obj_GrayDoorRight.image_alpha = 1;
 			camera_set_view_target(view_camera[0], noone);
 			camera_set_view_speed(view_camera[0], 5, 5);
 			obj_character.sprite_index = spr_Clymene_WalkingDown;

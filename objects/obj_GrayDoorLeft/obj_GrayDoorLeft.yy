@@ -1,19 +1,10 @@
 {
-    "id": "fa0ec90e-d09f-42b2-9784-2d5622996206",
+    "id": "d074b7b2-11bc-45fb-ab39-43aaf1e88cdd",
     "modelName": "GMObject",
     "mvc": "1.0",
-    "name": "obj_officerPath",
+    "name": "obj_GrayDoorLeft",
     "eventList": [
-        {
-            "id": "3c0db023-49d2-422b-9631-50dbe4ca907e",
-            "modelName": "GMEvent",
-            "mvc": "1.0",
-            "IsDnD": false,
-            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
-            "enumb": 0,
-            "eventtype": 0,
-            "m_owner": "fa0ec90e-d09f-42b2-9784-2d5622996206"
-        }
+        
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
     "parentObjectId": "00000000-0000-0000-0000-000000000000",
@@ -31,6 +22,6 @@
     "physicsShapePoints": null,
     "physicsStartAwake": true,
     "solid": false,
-    "spriteId": "52c2ed09-dccf-4a41-b393-56179b4ffc75",
+    "spriteId": "50544694-cc68-4876-b865-d688ea86cb49",
     "visible": true
 }

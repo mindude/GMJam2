@@ -12,9 +12,9 @@ show_debug_message(officer_y)
 if(face_Direction == "down"){
 	//1X2
 	if(place_free(officer_x,officer_y+50)){
-		if(place_meeting(officer_x,officer_y+50, obj_character) && !obj_character.sprite_index == spr_Clymene_CurtainUp){
+		if(place_meeting(officer_x,officer_y+50, obj_character)&& obj_character.sprite_index != spr_Clymene_CurtainUp){
 			//Gets caught
-			is_Walking = false;
+			spotted = true;
 		}
 		else if(place_meeting(officer_x,officer_y+50, obj_dollarBill)&&is_Distracted == false){
 				is_Distracted = true;
@@ -27,9 +27,9 @@ if(face_Direction == "down"){
 		//1X1
 		if(place_free(officer_x-50,officer_y+50)){
 			sight_detector_1 = 1;
-			if(place_meeting(officer_x-50,officer_y+50, obj_character)&& !obj_character.sprite_index == spr_Clymene_CurtainUp){
+			if(place_meeting(officer_x-50,officer_y+50, obj_character)&& obj_character.sprite_index != spr_Clymene_CurtainUp){
 				//Gets caught
-				is_Walking = false;
+				spotted = true;
 			}
 			else if(place_meeting(officer_x-50,officer_y+50, obj_dollarBill)&&is_Distracted == false){
 					is_Distracted = true;
@@ -43,9 +43,9 @@ if(face_Direction == "down"){
 		//1X3
 		if(place_free(officer_x+50,officer_y+50)){
 			sight_detector_2 = 1;
-			if(place_meeting(officer_x+50,officer_y+50, obj_character)&& !obj_character.sprite_index == spr_Clymene_CurtainUp){
+			if(place_meeting(officer_x+50,officer_y+50, obj_character)&& obj_character.sprite_index != spr_Clymene_CurtainUp){
 				//Gets caught
-				is_Walking = false;
+				spotted = true;
 			}
 			else if(place_meeting(officer_x+50,officer_y+50, obj_dollarBill)&&is_Distracted == false){
 					is_Distracted = true;
@@ -58,9 +58,9 @@ if(face_Direction == "down"){
 		}
 		//2X2
 		if(place_free(officer_x,officer_y+100)){
-			if(place_meeting(officer_x,officer_y+100, obj_character)&& !obj_character.sprite_index == spr_Clymene_CurtainUp){
+			if(place_meeting(officer_x,officer_y+100, obj_character)&& obj_character.sprite_index != spr_Clymene_CurtainUp){
 				//Gets caught
-				is_Walking = false;
+				spotted = true;
 			}
 			else if(place_meeting(officer_x,officer_y+100, obj_dollarBill)&&is_Distracted == false){
 					is_Distracted = true;
@@ -73,9 +73,9 @@ if(face_Direction == "down"){
 			//2X1
 			if(place_free(officer_x-50,officer_y+100)&&sight_detector_1 == 1){
 				sight_detector_1 = 2;
-				if(place_meeting(officer_x-50,officer_y+100, obj_character)&& !obj_character.sprite_index == spr_Clymene_CurtainUp){
+				if(place_meeting(officer_x-50,officer_y+100, obj_character)&& obj_character.sprite_index != spr_Clymene_CurtainUp){
 					//Gets caught
-					is_Walking = false;
+					spotted = true;
 				}
 				else if(place_meeting(officer_x-50,officer_y+100, obj_dollarBill)&&is_Distracted == false){
 					is_Distracted = true;
@@ -89,9 +89,9 @@ if(face_Direction == "down"){
 			//2X3
 			if(place_free(officer_x+50,officer_y+100)&&sight_detector_2 == 1){
 				sight_detector_2 = 2;
-				if(place_meeting(officer_x+50,officer_y+100, obj_character)&& !obj_character.sprite_index == spr_Clymene_CurtainUp){
+				if(place_meeting(officer_x+50,officer_y+100, obj_character)&& obj_character.sprite_index != spr_Clymene_CurtainUp){
 					//Gets caught
-					is_Walking = false;
+					spotted = true;
 				}
 				else if(place_meeting(officer_x+50,officer_y+100, obj_dollarBill)&&is_Distracted == false){
 					is_Distracted = true;
@@ -104,9 +104,9 @@ if(face_Direction == "down"){
 			}
 			//3X2
 			if(place_free(officer_x,officer_y+150)){
-				if(place_meeting(officer_x,officer_y+150, obj_character)&& !obj_character.sprite_index == spr_Clymene_CurtainUp){
+				if(place_meeting(officer_x,officer_y+150, obj_character)&& obj_character.sprite_index != spr_Clymene_CurtainUp){
 					//Gets caught
-					is_Walking = false;
+					spotted = true;
 				}
 				else if(place_meeting(officer_x,officer_y+150, obj_dollarBill)&&is_Distracted == false){
 					is_Distracted = true;
@@ -118,9 +118,9 @@ if(face_Direction == "down"){
 				}
 				//3X1
 				if(place_free(officer_x-50,officer_y+150)&&sight_detector_1 == 2){
-					if(place_meeting(officer_x-50,officer_y+150, obj_character)&& !obj_character.sprite_index == spr_Clymene_CurtainUp){
+					if(place_meeting(officer_x-50,officer_y+150, obj_character)&& obj_character.sprite_index != spr_Clymene_CurtainUp){
 						//Gets caught
-						is_Walking = false;
+						spotted = true;
 					}
 					else if(place_meeting(officer_x-50,officer_y+150, obj_dollarBill)&&is_Distracted == false){
 						is_Distracted = true;
@@ -133,9 +133,9 @@ if(face_Direction == "down"){
 				}
 				//3X3
 				if(place_free(officer_x+50,officer_y+150)&&sight_detector_2 == 2){
-					if(place_meeting(officer_x+50,officer_y+150, obj_character)&& !obj_character.sprite_index == spr_Clymene_CurtainUp){
+					if(place_meeting(officer_x+50,officer_y+150, obj_character)&& obj_character.sprite_index != spr_Clymene_CurtainUp){
 						//Gets caught
-						is_Walking = false;
+						spotted = true;
 					}
 					else if(place_meeting(officer_x+50,officer_y+150, obj_dollarBill)&&is_Distracted == false){
 						is_Distracted = true;
@@ -156,9 +156,9 @@ if(face_Direction == "down"){
 else if(face_Direction == "up"){
 	//1X2
 	if(place_free(officer_x,officer_y-50)){
-		if(place_meeting(officer_x,officer_y-50, obj_character)&& !obj_character.sprite_index == spr_Clymene_CurtainUp){
+		if(place_meeting(officer_x,officer_y-50, obj_character)&& obj_character.sprite_index != spr_Clymene_CurtainUp){
 			//Gets caught
-			is_Walking = false;
+			spotted = true;
 		}
 		else if(place_meeting(officer_x,officer_y-50, obj_dollarBill)&&is_Distracted == false){
 				is_Distracted = true;
@@ -173,7 +173,7 @@ else if(face_Direction == "up"){
 			sight_detector_1 = 1;
 			if(place_meeting(officer_x-50,officer_y-50, obj_character)&& !obj_character.sprite_index == spr_Clymene_CurtainUp){
 				//Gets caught
-				is_Walking = false;
+				spotted = true;
 			}
 			else if(place_meeting(officer_x-50,officer_y-50, obj_dollarBill)&&is_Distracted == false){
 					is_Distracted = true;
@@ -187,9 +187,9 @@ else if(face_Direction == "up"){
 		//1X3
 		if(place_free(officer_x+50,officer_y-50)){
 			sight_detector_2 = 1;
-			if(place_meeting(officer_x+50,officer_y-50, obj_character)&& !obj_character.sprite_index == spr_Clymene_CurtainUp){
+			if(place_meeting(officer_x+50,officer_y-50, obj_character)&& obj_character.sprite_index != spr_Clymene_CurtainUp){
 				//Gets caught
-				is_Walking = false;
+				spotted = true;
 			}
 			else if(place_meeting(officer_x+50,officer_y-50, obj_dollarBill)&&is_Distracted == false){
 					is_Distracted = true;
@@ -202,9 +202,9 @@ else if(face_Direction == "up"){
 		}
 		//2X2
 		if(place_free(officer_x,officer_y-100)){
-			if(place_meeting(officer_x,officer_y-100, obj_character)&& !obj_character.sprite_index == spr_Clymene_CurtainUp){
+			if(place_meeting(officer_x,officer_y-100, obj_character)&& obj_character.sprite_index != spr_Clymene_CurtainUp){
 				//Gets caught
-				is_Walking = false;
+				spotted = true;
 			}
 			else if(place_meeting(officer_x,officer_y-100, obj_dollarBill)&&is_Distracted == false){
 					is_Distracted = true;
@@ -217,9 +217,9 @@ else if(face_Direction == "up"){
 			//2X1
 			if(place_free(officer_x-50,officer_y-100)&&sight_detector_1 == 1){
 				sight_detector_1 = 2;
-				if(place_meeting(officer_x-50,officer_y-100, obj_character)&& !obj_character.sprite_index == spr_Clymene_CurtainUp){
+				if(place_meeting(officer_x-50,officer_y-100, obj_character)&& obj_character.sprite_index != spr_Clymene_CurtainUp){
 					//Gets caught
-					is_Walking = false;
+					spotted = true;
 				}
 				else if(place_meeting(officer_x-50,officer_y-100, obj_dollarBill)&&is_Distracted == false){
 					is_Distracted = true;
@@ -233,9 +233,9 @@ else if(face_Direction == "up"){
 			//2X3
 			if(place_free(officer_x+50,officer_y-100)&&sight_detector_2 == 1){
 				sight_detector_2 = 2;
-				if(place_meeting(officer_x+50,officer_y-100, obj_character)&& !obj_character.sprite_index == spr_Clymene_CurtainUp){
+				if(place_meeting(officer_x+50,officer_y-100, obj_character)&& obj_character.sprite_index != spr_Clymene_CurtainUp){
 					//Gets caught
-					is_Walking = false;
+					spotted = true;
 				}
 				else if(place_meeting(officer_x+50,officer_y-100, obj_dollarBill)&&is_Distracted == false){
 					is_Distracted = true;
@@ -248,9 +248,9 @@ else if(face_Direction == "up"){
 			}
 			//3X2
 			if(place_free(officer_x,officer_y-150)){
-				if(place_meeting(officer_x,officer_y-150, obj_character)&& !obj_character.sprite_index == spr_Clymene_CurtainUp){
+				if(place_meeting(officer_x,officer_y-150, obj_character)&& obj_character.sprite_index != spr_Clymene_CurtainUp){
 					//Gets caught
-					is_Walking = false;
+					spotted = true;
 				}
 				else if(place_meeting(officer_x,officer_y-150, obj_dollarBill)&&is_Distracted == false){
 					is_Distracted = true;
@@ -262,9 +262,9 @@ else if(face_Direction == "up"){
 				}
 				//3X1
 				if(place_free(officer_x-50,officer_y-150)&&sight_detector_1 == 2){
-					if(place_meeting(officer_x-50,officer_y-150, obj_character)&& !obj_character.sprite_index == spr_Clymene_CurtainUp){
+					if(place_meeting(officer_x-50,officer_y-150, obj_character)&& obj_character.sprite_index != spr_Clymene_CurtainUp){
 						//Gets caught
-						is_Walking = false;
+						spotted = true;
 					}
 					else if(place_meeting(officer_x-50,officer_y-150, obj_dollarBill)&&is_Distracted == false){
 						is_Distracted = true;
@@ -277,9 +277,9 @@ else if(face_Direction == "up"){
 				}
 				//3X3
 				if(place_free(officer_x+50,officer_y-150)&&sight_detector_2 == 2){
-					if(place_meeting(officer_x+50,officer_y-150, obj_character)&& !obj_character.sprite_index == spr_Clymene_CurtainUp){
+					if(place_meeting(officer_x+50,officer_y-150, obj_character)&& obj_character.sprite_index != spr_Clymene_CurtainUp){
 						//Gets caught
-						is_Walking = false;
+						spotted = true;
 					}
 					else if(place_meeting(officer_x+50,officer_y-150, obj_dollarBill)&&is_Distracted == false){
 						is_Distracted = true;
@@ -300,9 +300,9 @@ else if(face_Direction == "up"){
 else if(face_Direction == "left"){
 	//1X2
 	if(place_free(officer_x-50,officer_y)){
-		if(place_meeting(officer_x-50,officer_y, obj_character)&& !obj_character.sprite_index == spr_Clymene_CurtainUp){
+		if(place_meeting(officer_x-50,officer_y, obj_character)&& obj_character.sprite_index != spr_Clymene_CurtainUp){
 			//Gets caught
-			is_Walking = false;
+			spotted = true;
 		}
 		else if(place_meeting(officer_x-50,officer_y, obj_dollarBill)&&is_Distracted == false){
 				is_Distracted = true;
@@ -315,9 +315,9 @@ else if(face_Direction == "left"){
 		//1X1
 		if(place_free(officer_x-50,officer_y-50)){
 			sight_detector_1 = 1;
-			if(place_meeting(officer_x-50,officer_y-50, obj_character)&& !obj_character.sprite_index == spr_Clymene_CurtainUp){
+			if(place_meeting(officer_x-50,officer_y-50, obj_character)&& obj_character.sprite_index != spr_Clymene_CurtainUp){
 				//Gets caught
-				is_Walking = false;
+				spotted = true;
 			}
 			else if(place_meeting(officer_x-50,officer_y-50, obj_dollarBill)&&is_Distracted == false){
 					is_Distracted = true;
@@ -331,9 +331,9 @@ else if(face_Direction == "left"){
 		//1X3
 		if(place_free(officer_x-50,officer_y+50)){
 			sight_detector_2 = 1;
-			if(place_meeting(officer_x-50,officer_y+50, obj_character)&& !obj_character.sprite_index == spr_Clymene_CurtainUp){
+			if(place_meeting(officer_x-50,officer_y+50, obj_character)&& obj_character.sprite_index != spr_Clymene_CurtainUp){
 				//Gets caught
-				is_Walking = false;
+				spotted = true;
 			}
 			else if(place_meeting(officer_x-50,officer_y+50, obj_dollarBill)&&is_Distracted == false){
 					is_Distracted = true;
@@ -346,9 +346,9 @@ else if(face_Direction == "left"){
 		}
 		//2X2
 		if(place_free(officer_x-100,officer_y)){
-			if(place_meeting(officer_x-100,officer_y, obj_character)&& !obj_character.sprite_index == spr_Clymene_CurtainUp){
+			if(place_meeting(officer_x-100,officer_y, obj_character)&& obj_character.sprite_index != spr_Clymene_CurtainUp){
 				//Gets caught
-				is_Walking = false;
+				spotted = true;
 			}
 			else if(place_meeting(officer_x-100,officer_y, obj_dollarBill)&&is_Distracted == false){
 					is_Distracted = true;
@@ -361,9 +361,9 @@ else if(face_Direction == "left"){
 			//2X1
 			if(place_free(officer_x-100,officer_y-50)&&sight_detector_1 == 1){
 				sight_detector_1 = 2;
-				if(place_meeting(officer_x-100,officer_y-50, obj_character)&& !obj_character.sprite_index == spr_Clymene_CurtainUp){
+				if(place_meeting(officer_x-100,officer_y-50, obj_character)&& obj_character.sprite_index != spr_Clymene_CurtainUp){
 					//Gets caught
-					is_Walking = false;
+					spotted = true;
 				}
 				else if(place_meeting(officer_x-100,officer_y-50, obj_dollarBill)&&is_Distracted == false){
 					is_Distracted = true;
@@ -377,9 +377,9 @@ else if(face_Direction == "left"){
 			//2X3
 			if(place_free(officer_x-100,officer_y+50)&&sight_detector_2 == 1){
 				sight_detector_2 = 2;
-				if(place_meeting(officer_x-100,officer_y+50, obj_character)&& !obj_character.sprite_index == spr_Clymene_CurtainUp){
+				if(place_meeting(officer_x-100,officer_y+50, obj_character)&& obj_character.sprite_index != spr_Clymene_CurtainUp){
 					//Gets caught
-					is_Walking = false;
+					spotted = true;
 				}
 				else if(place_meeting(officer_x-100,officer_y+50, obj_dollarBill)&&is_Distracted == false){
 					is_Distracted = true;
@@ -392,9 +392,9 @@ else if(face_Direction == "left"){
 			}
 			//3X2
 			if(place_free(officer_x-150,officer_y)){
-				if(place_meeting(officer_x-150,officer_y, obj_character)&& !obj_character.sprite_index == spr_Clymene_CurtainUp){
+				if(place_meeting(officer_x-150,officer_y, obj_character)&& obj_character.sprite_index != spr_Clymene_CurtainUp){
 					//Gets caught
-					is_Walking = false;
+					spotted = true;
 				}
 				else if(place_meeting(officer_x-150,officer_y, obj_dollarBill)&&is_Distracted == false){
 					is_Distracted = true;
@@ -406,9 +406,9 @@ else if(face_Direction == "left"){
 				}
 				//3X1
 				if(place_free(officer_x-150,officer_y-50)&&sight_detector_1 == 2){
-					if(place_meeting(officer_x-150,officer_y-50, obj_character)&& !obj_character.sprite_index == spr_Clymene_CurtainUp){
+					if(place_meeting(officer_x-150,officer_y-50, obj_character)&& obj_character.sprite_index != spr_Clymene_CurtainUp){
 						//Gets caught
-						is_Walking = false;
+						spotted = true;
 					}
 					else if(place_meeting(officer_x-150,officer_y-50, obj_dollarBill)&&is_Distracted == false){
 						is_Distracted = true;
@@ -421,9 +421,9 @@ else if(face_Direction == "left"){
 				}
 				//3X3
 				if(place_free(officer_x-150,officer_y+50)&&sight_detector_2 == 2){
-					if(place_meeting(officer_x-150,officer_y+50, obj_character)&& !obj_character.sprite_index == spr_Clymene_CurtainUp){
+					if(place_meeting(officer_x-150,officer_y+50, obj_character)&& obj_character.sprite_index != spr_Clymene_CurtainUp){
 						//Gets caught
-						is_Walking = false;
+						spotted = true;
 					}
 					else if(place_meeting(officer_x-150,officer_y+50, obj_dollarBill)&&is_Distracted == false){
 						is_Distracted = true;
@@ -444,9 +444,9 @@ else if(face_Direction == "left"){
 else if(face_Direction == "right"){
 	//1X2
 	if(place_free(officer_x+50,officer_y)){
-		if(place_meeting(officer_x+50,officer_y, obj_character)&& !obj_character.sprite_index == spr_Clymene_CurtainUp){
+		if(place_meeting(officer_x+50,officer_y, obj_character)&& obj_character.sprite_index != spr_Clymene_CurtainUp){
 			//Gets caught
-			is_Walking = false;
+			spotted = true;
 		}
 		else if(place_meeting(officer_x+50,officer_y, obj_dollarBill)&&is_Distracted == false){
 				is_Distracted = true;
@@ -459,9 +459,9 @@ else if(face_Direction == "right"){
 		//1X1
 		if(place_free(officer_x+50,officer_y-50)){
 			sight_detector_1 = 1;
-			if(place_meeting(officer_x+50,officer_y-50, obj_character)&& !obj_character.sprite_index == spr_Clymene_CurtainUp){
+			if(place_meeting(officer_x+50,officer_y-50, obj_character)&& obj_character.sprite_index != spr_Clymene_CurtainUp){
 				//Gets caught
-				is_Walking = false;
+				spotted = true;
 			}
 			else if(place_meeting(officer_x+50,officer_y-50, obj_dollarBill)&&is_Distracted == false){
 					is_Distracted = true;
@@ -475,9 +475,9 @@ else if(face_Direction == "right"){
 		//1X3
 		if(place_free(officer_x+50,officer_y+50)){
 			sight_detector_2 = 1;
-			if(place_meeting(officer_x+50,officer_y+50, obj_character)&& !obj_character.sprite_index == spr_Clymene_CurtainUp){
+			if(place_meeting(officer_x+50,officer_y+50, obj_character)&& obj_character.sprite_index != spr_Clymene_CurtainUp){
 				//Gets caught
-				is_Walking = false;
+				spotted = true;
 			}
 			else if(place_meeting(officer_x+50,officer_y+50, obj_dollarBill)&&is_Distracted == false){
 					is_Distracted = true;
@@ -490,9 +490,9 @@ else if(face_Direction == "right"){
 		}
 		//2X2
 		if(place_free(officer_x+100,officer_y)){
-			if(place_meeting(officer_x+100,officer_y, obj_character)&& !obj_character.sprite_index == spr_Clymene_CurtainUp){
+			if(place_meeting(officer_x+100,officer_y, obj_character)&& obj_character.sprite_index != spr_Clymene_CurtainUp){
 				//Gets caught
-				is_Walking = false;
+				spotted = true;
 			}
 			else if(place_meeting(officer_x+100,officer_y, obj_dollarBill)&&is_Distracted == false){
 					is_Distracted = true;
@@ -505,9 +505,9 @@ else if(face_Direction == "right"){
 			//2X1
 			if(place_free(officer_x+100,officer_y-50)&&sight_detector_1 == 1){
 				sight_detector_1 = 2;
-				if(place_meeting(officer_x+100,officer_y-50, obj_character)&& !obj_character.sprite_index == spr_Clymene_CurtainUp){
+				if(place_meeting(officer_x+100,officer_y-50, obj_character)&& obj_character.sprite_index != spr_Clymene_CurtainUp){
 					//Gets caught
-					is_Walking = false;
+					spotted = true;
 				}
 				else if(place_meeting(officer_x+100,officer_y-50, obj_dollarBill)&&is_Distracted == false){
 					is_Distracted = true;
@@ -521,9 +521,9 @@ else if(face_Direction == "right"){
 			//2X3
 			if(place_free(officer_x+100,officer_y+50)&&sight_detector_2 == 1){
 				sight_detector_2 = 2;
-				if(place_meeting(officer_x+100,officer_y+50, obj_character)&& !obj_character.sprite_index == spr_Clymene_CurtainUp){
+				if(place_meeting(officer_x+100,officer_y+50, obj_character)&& obj_character.sprite_index != spr_Clymene_CurtainUp){
 					//Gets caught
-					is_Walking = false;
+					spotted = true;
 				}
 				else if(place_meeting(officer_x+100,officer_y+50, obj_dollarBill)&&is_Distracted == false){
 					is_Distracted = true;
@@ -536,9 +536,9 @@ else if(face_Direction == "right"){
 			}
 			//3X2
 			if(place_free(officer_x+150,officer_y)){
-				if(place_meeting(officer_x+150,officer_y, obj_character)&& !obj_character.sprite_index == spr_Clymene_CurtainUp){
+				if(place_meeting(officer_x+150,officer_y, obj_character)&& obj_character.sprite_index != spr_Clymene_CurtainUp){
 					//Gets caught
-					is_Walking = false;
+					spotted = true;
 				}
 				else if(place_meeting(officer_x+150,officer_y, obj_dollarBill)&&is_Distracted == false){
 					is_Distracted = true;
@@ -550,9 +550,9 @@ else if(face_Direction == "right"){
 				}
 				//3X1
 				if(place_free(officer_x+150,officer_y-50)&&sight_detector_1 == 2){
-					if(place_meeting(officer_x+150,officer_y-50, obj_character)&& !obj_character.sprite_index == spr_Clymene_CurtainUp){
+					if(place_meeting(officer_x+150,officer_y-50, obj_character)&& obj_character.sprite_index != spr_Clymene_CurtainUp){
 						//Gets caught
-						is_Walking = false;
+						spotted = true;
 					}
 					else if(place_meeting(officer_x+150,officer_y-50, obj_dollarBill)&&is_Distracted == false){
 						is_Distracted = true;
@@ -565,9 +565,9 @@ else if(face_Direction == "right"){
 				}
 				//3X3
 				if(place_free(officer_x+150,officer_y+50)&&sight_detector_2 == 2){
-					if(place_meeting(officer_x+150,officer_y+50, obj_character)&& !obj_character.sprite_index == spr_Clymene_CurtainUp){
+					if(place_meeting(officer_x+150,officer_y+50, obj_character)&& obj_character.sprite_index != spr_Clymene_CurtainUp){
 						//Gets caught
-						is_Walking = false;
+						spotted = true;
 					}
 					else if(place_meeting(officer_x+150,officer_y+50, obj_dollarBill)&&is_Distracted == false){
 						is_Distracted = true;
