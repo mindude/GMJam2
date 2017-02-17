@@ -108,18 +108,21 @@ if(obj_character.moving)
 		if(mouse_check_button_pressed(mb_left))
 		{
 			index_replay = 1;
-			obj_character.timeline_running = false;
-			obj_character.hspeed = 0;
-			obj_character.vspeed = 0;
-			obj_character.moving = false;
-			obj_character.x = obj_characterStart.x + 25;
-			obj_character.y = obj_characterStart.y + 25;
+			with(obj_character)
+			{
+				timeline_running = false;
+				hspeed = 0;
+				vspeed = 0;
+				moving = false;
+				x = obj_characterStart.x + 25;
+				y = obj_characterStart.y + 25;
+				sprite_index = spr_Clymene_WalkingDown;
+				image_speed = 0;
+			}
 			obj_key.image_alpha = 1;
 			obj_door.image_alpha = 1;
 			camera_set_view_target(view_camera[0], noone);
 			camera_set_view_speed(view_camera[0], 5, 5);
-			obj_character.sprite_index = spr_Clymene_WalkingDown;
-			obj_character.image_speed = 0;
 			with(obj_dollarBill)
 			{
 				instance_destroy();
@@ -137,6 +140,17 @@ if(obj_character.moving)
 			obj_officerPath.visible = true;
 			obj_chosenPath.visible = true;
 			index_play = 0;
+			with(obj_officer)
+			{
+				sleep_steps = 100
+				started = false;
+				is_Walking = false;
+				is_Distracted = false;
+				x = starting_point_x;
+				y = starting_point_y;
+				face_Direction = starting_face_Direction;
+				image_speed = 0
+			}
 		}
 		else if(!mouse_check_button(mb_left)){
 			index_replay = 0;
@@ -157,18 +171,26 @@ else
 		{
 			index_play = 1;
 			camera_set_view_target(view_camera[0], obj_character);
-			obj_character.indexOrder = 0;
-			obj_character.indexStep = 0;
-			obj_character.timeline_index = character_move;
-			obj_character.timeline_position = 0;
-			obj_character.timeline_loop = false;
-			obj_character.timeline_running = true;
-			obj_character.moving = true;
+			with(obj_character)
+			{
+				indexOrder = 0;
+				indexStep = 0;
+				timeline_index = character_move;
+				timeline_position = 0;
+				timeline_loop = false;
+				timeline_running = true;
+				moving = true;
+			}
 			obj_leadPath.visible = false;
 			obj_path.visible = false;
 			obj_officerPath.visible = false;
 			obj_chosenPath.visible = false;
 			index_replay = 0;
+			with(obj_officer)
+			{
+				started = true;
+				is_Walking = true;
+			}
 		}
 		else if(!mouse_check_button(mb_left)){
 			index_play = 0;

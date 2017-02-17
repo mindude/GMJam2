@@ -111,6 +111,14 @@
             }
         },
         {
+            "Key": "0b9bd14c-613c-4872-8f4c-ce7a3c210e24",
+            "Value": {
+                "id": "8c157be1-7750-4fd0-8ed7-f954404d4bfd",
+                "resourcePath": "objects\\obj_MusicTitle\\obj_MusicTitle.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "0bb5697b-f8cd-4030-b141-9ac3f2c0b748",
             "Value": {
                 "id": "347ae743-dabf-405d-b9ed-2c73fd83c791",
@@ -403,6 +411,14 @@
             "Value": {
                 "id": "c8e0a522-406a-4d83-9461-a1e95e2e5e90",
                 "resourcePath": "objects\\obj_chosenPath\\obj_chosenPath.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "46138420-d450-4b29-9ffc-ccbaaa759fd4",
+            "Value": {
+                "id": "4f71798f-72e8-4e56-97bb-26241aa3a43b",
+                "resourcePath": "objects\\obj_Fade\\obj_Fade.yy",
                 "resourceType": "GMObject"
             }
         },

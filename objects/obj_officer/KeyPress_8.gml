@@ -7,4 +7,4 @@ is_Distracted = false;
 x = starting_point_x;
 y = starting_point_y;
 face_Direction = starting_face_Direction;
-image_speed = 0
+image_speed = 0;
