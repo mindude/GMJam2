@@ -15,7 +15,7 @@ if(started == true){
 	}
 }
 
-if(is_Walking == true && sleep_steps == 100){
+if(is_Walking == true && sleep_steps == 100 && spotted == false){
 	image_speed = 1
 	residue_x = (x-25) mod 50;
 	residue_y = (y-25) mod 50;

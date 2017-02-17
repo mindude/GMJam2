@@ -1,4 +1,6 @@
 /// @description Creating variables
+globalvar spotted;
+spotted = false;
 image_speed = 0;
 global.pathEnabled = false;
 orders = ds_list_create(); //Sequence of commands
