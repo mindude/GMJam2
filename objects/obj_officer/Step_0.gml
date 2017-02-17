@@ -2,6 +2,7 @@
 // You can write your code in this editor
 
 if(is_Walking == true){
+	image_speed = 1
 	residue_x = (x-25) mod 50;
 	residue_y = (y-25) mod 50;
 	if(residue_x == 0 && residue_y == 0){officer_x = x; officer_y = y;}
