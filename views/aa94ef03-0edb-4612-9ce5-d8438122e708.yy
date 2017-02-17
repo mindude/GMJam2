@@ -8,8 +8,7 @@
         "449375aa-abf9-40c2-ad1c-618b89e242ec",
         "c9d83f5e-21f3-41b0-8161-611909df7c1c",
         "03e4d3ac-2d2c-4037-a2a6-0c15c5853580",
-        "dca34937-0095-453e-afeb-77784e16e161",
-        "b0943a02-78e0-4f38-8bbd-accd5b814c3b"
+        "dca34937-0095-453e-afeb-77784e16e161"
     ],
     "filterType": "GMSprite",
     "folderName": "Museum",
