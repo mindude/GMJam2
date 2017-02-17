@@ -47,6 +47,14 @@
             }
         },
         {
+            "Key": "01f39b57-d091-4df4-a0df-64fa201a0db6",
+            "Value": {
+                "id": "bf4246ae-5d3b-4efc-823f-846281f68a71",
+                "resourcePath": "objects\\obj_Finish\\obj_Finish.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "0305698c-542d-4d43-93ab-f9ec79b7db32",
             "Value": {
                 "id": "fbdaf8f6-251f-47d3-a0b4-dc0223d0c91c",
@@ -108,6 +116,14 @@
                 "id": "347ae743-dabf-405d-b9ed-2c73fd83c791",
                 "resourcePath": "rooms\\room0\\room0.yy",
                 "resourceType": "GMRoom"
+            }
+        },
+        {
+            "Key": "10bbc1a4-8c3d-4170-95d7-77c7e5b16244",
+            "Value": {
+                "id": "1227f1a1-7e20-4d8a-b1e7-cac07d1f2e60",
+                "resourcePath": "objects\\obj_Spawner\\obj_Spawner.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -356,6 +372,14 @@
                 "id": "2a7a3115-57d7-4b7c-a9f6-71321a6a3b90",
                 "resourcePath": "sprites\\spr_Clymene_UseItemUp\\spr_Clymene_UseItemUp.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "42501002-7a04-4e12-afeb-9eefd7581edf",
+            "Value": {
+                "id": "b851f25b-d55f-4987-933e-493065d2c9ea",
+                "resourcePath": "objects\\obj_Exit\\obj_Exit.yy",
+                "resourceType": "GMObject"
             }
         },
         {
