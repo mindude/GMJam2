@@ -999,6 +999,14 @@
             }
         },
         {
+            "Key": "cee1bdc6-c0bd-4b0f-a292-2697b5c3b9bc",
+            "Value": {
+                "id": "271d8e0e-e70d-4d1e-bd13-96d3d5513db3",
+                "resourcePath": "sprites\\spr_Circle\\spr_Circle.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "d51f15f4-7674-46c1-bf40-248cbc443319",
             "Value": {
                 "id": "b0f741e2-f36a-4982-a8df-ed2a8b5e7e3b",
