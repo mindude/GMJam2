@@ -22,8 +22,16 @@ if(global.pathEnabled && !obj_character.moving)
 	}
 	if(sprite_index == spr_invalidPath)
 	{
-		x = ds_list_find_value(obj_character.steps, ds_list_size(obj_character.steps)-1).x;
-		y = ds_list_find_value(obj_character.steps, ds_list_size(obj_character.steps)-1).y;
+		if(ds_list_size(obj_character.steps) > 0)
+		{
+			x = ds_list_find_value(obj_character.steps, ds_list_size(obj_character.steps)-1).x;
+			y = ds_list_find_value(obj_character.steps, ds_list_size(obj_character.steps)-1).y;
+		}
+		else
+		{
+			x = obj_characterStart.x;
+			y = obj_characterStart.y;
+		}
 	}
 	sprite_index = spr_leadPath;
 	if(obj_character.has_key)
