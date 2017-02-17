@@ -679,6 +679,14 @@
             }
         },
         {
+            "Key": "897bae33-3775-44c2-9376-80b319f27f10",
+            "Value": {
+                "id": "a62986a9-655f-44b2-8d40-de611a6a3b33",
+                "resourcePath": "sprites\\spr_Replay\\spr_Replay.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "8ab5f217-9aac-42e5-8fb8-06a84dd27472",
             "Value": {
                 "id": "ec4f07a1-1488-4036-b715-49162deabce5",
@@ -732,6 +740,14 @@
                 "id": "5bd9e41e-bd67-42b8-9027-1cabd61578b4",
                 "resourcePath": "objects\\obj_CloudedTile\\obj_CloudedTile.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "93c66605-9606-4ee6-b2ec-ed5f8055fa38",
+            "Value": {
+                "id": "1cb428cf-0739-4e2b-9717-ab9514d5b204",
+                "resourcePath": "sprites\\spr_Play\\spr_Play.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -855,6 +871,14 @@
             }
         },
         {
+            "Key": "a4f0d11b-dad0-4617-9858-8ad8c5a6362f",
+            "Value": {
+                "id": "cd957456-afc5-48d4-ad4a-b42c441f1e58",
+                "resourcePath": "sounds\\thinking_Phase\\thinking_Phase.yy",
+                "resourceType": "GMSound"
+            }
+        },
+        {
             "Key": "a5cc55dc-7d3b-4506-949a-26185db86628",
             "Value": {
                 "id": "3a9100c7-6b57-4c81-b524-a116efe8f309",
@@ -900,6 +924,14 @@
                 "id": "b8b55b92-4594-47d0-b642-7e852b6fa570",
                 "resourcePath": "sprites\\test\\test.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "ac9f2c80-da9e-4660-b1a2-199b919b86be",
+            "Value": {
+                "id": "89fc2159-cc12-47b1-8458-e8a7544f50f9",
+                "resourcePath": "objects\\obj_Music\\obj_Music.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -1124,6 +1156,14 @@
                 "id": "8d9d1f7b-3cd1-465f-a42a-7d1d0ac559f5",
                 "resourcePath": "objects\\obj_officer\\obj_officer.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "dbd0a4fa-cb2f-46a5-8294-df9daff4cbd8",
+            "Value": {
+                "id": "196d20b8-459a-466a-8fd3-d76349cd42ae",
+                "resourcePath": "sounds\\escape_Phase\\escape_Phase.yy",
+                "resourceType": "GMSound"
             }
         },
         {

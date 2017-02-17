@@ -50,13 +50,20 @@ with(obj_character){
 	{
 		vspeed = 0;
 		hspeed = 0;
-		sprite_index = spr_Curtain;
+		sprite_index = spr_Clymene_CurtainUp;
+		image_index = 1;
+		image_speed = 1;
+	}
+	else if(ds_list_find_value(orders, indexOrder) == "curtain")
+	{
+		vspeed = 0;
+		hspeed = 0;
 	}
 	else if(ds_list_find_value(orders, indexOrder) == "curtain_off")
 	{
 		vspeed = 0;
 		hspeed = 0;
-		sprite_index = spr_Clymene_WalkingDown;
+		image_speed = -1;
 	}
 	else if(ds_list_find_value(orders, indexOrder) == "dollar")
 	{

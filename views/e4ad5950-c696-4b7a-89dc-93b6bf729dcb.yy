@@ -11,7 +11,9 @@
         "e318d894-92ce-456d-a528-17c700feae25",
         "cee1bdc6-c0bd-4b0f-a292-2697b5c3b9bc",
         "7d6f2c29-6f5b-403c-ac36-55311cec6d27",
-        "8c01f404-c109-42a3-a060-03c9b79438b1"
+        "8c01f404-c109-42a3-a060-03c9b79438b1",
+        "93c66605-9606-4ee6-b2ec-ed5f8055fa38",
+        "897bae33-3775-44c2-9376-80b319f27f10"
     ],
     "filterType": "GMSprite",
     "folderName": "Hud",

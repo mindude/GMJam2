@@ -24,3 +24,5 @@ draw_sprite(spr_Explosion_Smoke, 0, 1262, 710);
 draw_sprite(spr_CurtainHUD, 0, 1338, 685);
 draw_sprite(spr_dollar_Bill, 0, 1237, 788);
 draw_sprite(spr_Hypnosis, 0, 1338, 788);
+draw_sprite(spr_Play, index_play, 1100, 660);
+draw_sprite(spr_Replay, index_replay, 1170, 660);

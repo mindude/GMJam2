@@ -1,4 +1,12 @@
 with(obj_character){
+	if(ds_list_find_value(orders, indexOrder) == "curtain_on")
+	{
+		image_speed = 0;
+	}
+	else if(ds_list_find_value(orders, indexOrder) == "curtain_off")
+	{
+		sprite_index = spr_Clymene_WalkingDown;
+	}
 	indexOrder += 1;
 	if(position_meeting(x - 25, y - 25, obj_key))
 	{
