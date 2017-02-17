@@ -1,5 +1,7 @@
 /// @description Creating variables
 globalvar spotted;
+globalvar win;
+win = false;
 spotted = false;
 image_speed = 0;
 global.pathEnabled = false;

@@ -1,5 +1,9 @@
 /// @description Insert description here
-if(x-25 == obj_Finish.x && y-25 == obj_Finish.y) show_debug_message("Finished!")
+if(x-25 == obj_Finish.x && y-25 == obj_Finish.y){ show_debug_message("Finished!")
+	audio_stop_sound(obj_Music.s);
+	instance_create_layer(0,0,"HUD",object_32)
+	
+}
 
 if(moving)
 {
