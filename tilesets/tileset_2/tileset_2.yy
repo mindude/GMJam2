@@ -1,8 +1,8 @@
 {
-    "id": "d51f15f4-7674-46c1-bf40-248cbc443319",
+    "id": "5fa98ef2-1b70-4d27-b900-fff264b5862a",
     "modelName": "GMTileSet",
     "mvc": "1.11",
-    "name": "tileset_MuseumWall",
+    "name": "tileset_2",
     "auto_tile_sets": [
         
     ],
@@ -14,10 +14,10 @@
             
         ]
     },
-    "out_columns": 3,
+    "out_columns": 2,
     "out_tilehborder": 2,
     "out_tilevborder": 2,
-    "spriteId": "6f18f963-a1bd-4e5b-88c2-1be15556d41b",
+    "spriteId": "486c13ba-2153-4d41-be16-d23e2c792111",
     "sprite_no_export": true,
     "textureGroup": 0,
     "tile_animation": {
@@ -26,15 +26,7 @@
             0,
             1,
             2,
-            3,
-            4,
-            5,
-            6,
-            7,
-            8,
-            9,
-            10,
-            11
+            3
         ],
         "SerialiseFrameCount": 1
     },
@@ -42,7 +34,7 @@
         
     ],
     "tile_animation_speed": 15,
-    "tile_count": 12,
+    "tile_count": 4,
     "tileheight": 50,
     "tilehsep": 0,
     "tilevsep": 0,
