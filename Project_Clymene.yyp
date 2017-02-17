@@ -130,7 +130,7 @@
             "Key": "0bb5697b-f8cd-4030-b141-9ac3f2c0b748",
             "Value": {
                 "id": "347ae743-dabf-405d-b9ed-2c73fd83c791",
-                "resourcePath": "rooms\\room0\\room0.yy",
+                "resourcePath": "rooms\\room_FirstLevel\\room_FirstLevel.yy",
                 "resourceType": "GMRoom"
             }
         },
@@ -247,6 +247,14 @@
             }
         },
         {
+            "Key": "21a38d97-3a4d-40dd-bd60-73bb56b6a21f",
+            "Value": {
+                "id": "351b32a3-7973-46a0-b1d0-4aed13153726",
+                "resourcePath": "sprites\\spr_PersonalOnly\\spr_PersonalOnly.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "24130000-dc90-49de-b1e6-40cd36ec5ea7",
             "Value": {
                 "id": "eb0a5f51-f809-4352-b90e-19fbd91a9c11",
@@ -268,6 +276,22 @@
                 "id": "8eb76e7c-c388-448f-972b-0528335cc4d0",
                 "resourcePath": "views\\2973c509-68f1-4e15-b506-92a2bf8bfc1d.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "2bed862a-b6de-44e1-82c1-c8de63a6d3e1",
+            "Value": {
+                "id": "6d0ea68f-b23c-48c7-bb54-845c60a1a8c9",
+                "resourcePath": "views\\2bed862a-b6de-44e1-82c1-c8de63a6d3e1.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "2cca23f8-fb54-42b8-80f2-a86218ce9c83",
+            "Value": {
+                "id": "6d747763-b735-408f-8e3e-6aeae0fd66c4",
+                "resourcePath": "sprites\\spr_SleepingBubble\\spr_SleepingBubble.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -1031,6 +1055,14 @@
             }
         },
         {
+            "Key": "a58107a8-2bea-4aef-9ef2-1a2f9149ce89",
+            "Value": {
+                "id": "08ba1170-ecca-442a-a1d3-607548de26b6",
+                "resourcePath": "sprites\\spr_QuestionBubble\\spr_QuestionBubble.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "a5cc55dc-7d3b-4506-949a-26185db86628",
             "Value": {
                 "id": "3a9100c7-6b57-4c81-b524-a116efe8f309",
@@ -1415,6 +1447,14 @@
             }
         },
         {
+            "Key": "e82407c5-0533-4e3a-bf95-3837432d2b89",
+            "Value": {
+                "id": "6750179f-be59-4e89-9405-82ca4af34466",
+                "resourcePath": "sprites\\spr_ExclamationBubble\\spr_ExclamationBubble.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "eb559331-10ed-449e-ab01-4a87d2534396",
             "Value": {
                 "id": "caaef8c9-54b9-43f8-b5b2-852557d757b6",
@@ -1427,6 +1467,14 @@
             "Value": {
                 "id": "4c3c9da3-11ad-440b-9457-bdc7126eef76",
                 "resourcePath": "views\\efcf9182-790b-4c40-bef2-a71f85993d1d.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "f13563aa-8681-4a9e-972c-64d539385209",
+            "Value": {
+                "id": "4c4afe2c-d4ac-42d6-860b-c628f851aee3",
+                "resourcePath": "views\\f13563aa-8681-4a9e-972c-64d539385209.yy",
                 "resourceType": "GMFolder"
             }
         },
