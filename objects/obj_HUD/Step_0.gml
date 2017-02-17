@@ -119,6 +119,7 @@ if(obj_character.moving)
 				sprite_index = spr_Clymene_WalkingDown;
 				image_speed = 0;
 			}
+			spotted = false;
 			obj_key.image_alpha = 1;
 			obj_door.image_alpha = 1;
 			obj_GrayDoorKeyhole.image_alpha = 1;

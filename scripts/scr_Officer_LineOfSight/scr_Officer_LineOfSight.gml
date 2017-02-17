@@ -584,7 +584,7 @@ else if(face_Direction == "right"){
 }
 
 
-
+//audio_play_sound(detected, 50, false);
 
 
 

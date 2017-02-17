@@ -4,111 +4,121 @@ with(obj_character){
 	show_debug_message("Character Y: " + string(y));
 	show_debug_message("Next Y: " + string(ds_list_find_value(steps, index).y))
 	show_debug_message("Index: " + string(index))*/
-	if(ds_list_find_value(orders, indexOrder) == "step")
+	if(spotted)
 	{
-		if(x - 25 > ds_list_find_value(steps, indexStep).x)
+		hspeed = 0;
+		vspeed = 0;
+		image_speed = 0;
+		timeline_running = false;
+	}
+	else
+	{
+		if(ds_list_find_value(orders, indexOrder) == "step")
 		{
-			sprite_index = spr_Clymene_WalkingSide;
-			image_speed = 2;
-			image_xscale = -1;
-			hspeed = -5;
-			vspeed = 0;
+			if(x - 25 > ds_list_find_value(steps, indexStep).x)
+			{
+				sprite_index = spr_Clymene_WalkingSide;
+				image_speed = 2;
+				image_xscale = -1;
+				hspeed = -5;
+				vspeed = 0;
+			}
+			else if(x - 25 < ds_list_find_value(steps, indexStep).x)
+			{
+				sprite_index = spr_Clymene_WalkingSide;
+				image_speed = 2;
+				image_xscale = 1;
+				hspeed = 5;
+				vspeed = 0;
+			}
+			else if(y - 25 > ds_list_find_value(steps, indexStep).y)
+			{
+				sprite_index = spr_Clymene_WalkingUp;
+				image_speed = 2;
+				image_xscale = 1;
+				vspeed = -5;
+				hspeed = 0;
+			}
+			else if(y - 25 < ds_list_find_value(steps, indexStep).y)
+			{
+				sprite_index = spr_Clymene_WalkingDown;
+				image_speed = 2;
+				image_xscale = -1;
+				vspeed = 5;
+				hspeed = 0;
+			}
+			indexStep += 1;
 		}
-		else if(x - 25 < ds_list_find_value(steps, indexStep).x)
+		else if(ds_list_find_value(orders, indexOrder) == "wait")
 		{
-			sprite_index = spr_Clymene_WalkingSide;
-			image_speed = 2;
-			image_xscale = 1;
-			hspeed = 5;
+			image_speed = 0;
 			vspeed = 0;
-		}
-		else if(y - 25 > ds_list_find_value(steps, indexStep).y)
-		{
-			sprite_index = spr_Clymene_WalkingUp;
-			image_speed = 2;
-			image_xscale = 1;
-			vspeed = -5;
 			hspeed = 0;
 		}
-		else if(y - 25 < ds_list_find_value(steps, indexStep).y)
+		else if(ds_list_find_value(orders, indexOrder) == "curtain_on")
 		{
-			sprite_index = spr_Clymene_WalkingDown;
-			image_speed = 2;
-			image_xscale = -1;
-			vspeed = 5;
+			vspeed = 0;
+			hspeed = 0;
+			sprite_index = spr_Clymene_CurtainUp;
+			image_index = 1;
+			image_speed = 1;
+		}
+		else if(ds_list_find_value(orders, indexOrder) == "curtain")
+		{
+			vspeed = 0;
 			hspeed = 0;
 		}
-		indexStep += 1;
-	}
-	else if(ds_list_find_value(orders, indexOrder) == "wait")
-	{
-		image_speed = 0;
-		vspeed = 0;
-		hspeed = 0;
-	}
-	else if(ds_list_find_value(orders, indexOrder) == "curtain_on")
-	{
-		vspeed = 0;
-		hspeed = 0;
-		sprite_index = spr_Clymene_CurtainUp;
-		image_index = 1;
-		image_speed = 1;
-	}
-	else if(ds_list_find_value(orders, indexOrder) == "curtain")
-	{
-		vspeed = 0;
-		hspeed = 0;
-	}
-	else if(ds_list_find_value(orders, indexOrder) == "curtain_off")
-	{
-		vspeed = 0;
-		hspeed = 0;
-		image_speed = -1;
-	}
-	else if(ds_list_find_value(orders, indexOrder) == "dollar")
-	{
-		image_speed = 0;
-		vspeed = 0;
-		hspeed = 0;
-		instance_create_layer(x - 25, y - 25, "Dollars", obj_dollarBill)
-	}
-	else if(ds_list_find_value(orders, indexOrder) == "hypnosis")
-	{
-		if(place_meeting(x - 50, y, obj_officer))
+		else if(ds_list_find_value(orders, indexOrder) == "curtain_off")
 		{
-			sprite_index = spr_Clymene_HypnosisSide;
-			image_xscale = -1;
+			vspeed = 0;
+			hspeed = 0;
+			image_speed = -1;
 		}
-		else if(place_meeting(x + 50, y, obj_officer))
+		else if(ds_list_find_value(orders, indexOrder) == "dollar")
 		{
-			sprite_index = spr_Clymene_HypnosisSide;
-			image_xscale = 1;
+			image_speed = 0;
+			vspeed = 0;
+			hspeed = 0;
+			instance_create_layer(x - 25, y - 25, "Dollars", obj_dollarBill)
 		}
-		else if(place_meeting(x, y - 50, obj_officer))
+		else if(ds_list_find_value(orders, indexOrder) == "hypnosis")
 		{
-			sprite_index = spr_Clymene_HypnosisUp;
-			image_xscale = 1;
+			if(place_meeting(x - 50, y, obj_officer))
+			{
+				sprite_index = spr_Clymene_HypnosisSide;
+				image_xscale = -1;
+			}
+			else if(place_meeting(x + 50, y, obj_officer))
+			{
+				sprite_index = spr_Clymene_HypnosisSide;
+				image_xscale = 1;
+			}
+			else if(place_meeting(x, y - 50, obj_officer))
+			{
+				sprite_index = spr_Clymene_HypnosisUp;
+				image_xscale = 1;
+			}
+			else if(place_meeting(x, y + 50, obj_officer))
+			{
+				sprite_index = spr_Clymene_HypnosisDown;
+				image_xscale = 1;
+			}
+			else
+			{
+				sprite_index = spr_Clymene_HypnosisDown;
+				image_xscale = 1;
+			}
+			image_speed = 1;
+			vspeed = 0;
+			hspeed = 0;
 		}
-		else if(place_meeting(x, y + 50, obj_officer))
+		else if(ds_list_find_value(orders, indexOrder) == "smoke_bomb")
 		{
-			sprite_index = spr_Clymene_HypnosisDown;
-			image_xscale = 1;
+			image_speed = 0;
+			vspeed = 0;
+			hspeed = 0;
+			instance_create_layer(x - 25, y - 25, "Smoke", obj_Bomb);
+			obj_Bomb.vspeed = 1;
 		}
-		else
-		{
-			sprite_index = spr_Clymene_HypnosisDown;
-			image_xscale = 1;
-		}
-		image_speed = 1;
-		vspeed = 0;
-		hspeed = 0;
-	}
-	else if(ds_list_find_value(orders, indexOrder) == "smoke_bomb")
-	{
-		image_speed = 0;
-		vspeed = 0;
-		hspeed = 0;
-		instance_create_layer(x - 25, y - 25, "Smoke", obj_Bomb);
-		obj_Bomb.vspeed = 1;
-	}
+	}	
 }
