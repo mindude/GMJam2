@@ -95,6 +95,14 @@
             }
         },
         {
+            "Key": "0a5bb87b-a861-4c55-8fa0-65ba27a0c1b5",
+            "Value": {
+                "id": "f8f79e17-6ab1-438c-aacc-74b9fb016e35",
+                "resourcePath": "sprites\\spr_GrayDoorKeyhole\\spr_GrayDoorKeyhole.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "0bb5697b-f8cd-4030-b141-9ac3f2c0b748",
             "Value": {
                 "id": "347ae743-dabf-405d-b9ed-2c73fd83c791",
@@ -139,6 +147,14 @@
             "Value": {
                 "id": "70d2217b-9b5b-4179-adb7-599cae147b35",
                 "resourcePath": "views\\18d48521-7d40-4594-ab71-0b572f51952e.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "1954c8ac-8ff3-40df-ab6f-7f16876f9b5d",
+            "Value": {
+                "id": "6807f486-6ca5-4adc-bd94-d66b52616945",
+                "resourcePath": "views\\1954c8ac-8ff3-40df-ab6f-7f16876f9b5d.yy",
                 "resourceType": "GMFolder"
             }
         },
@@ -319,6 +335,14 @@
             }
         },
         {
+            "Key": "3c19e4bc-ff85-4d2f-8b3c-c633cac214bb",
+            "Value": {
+                "id": "fccb3e33-6e01-405b-81c8-b6e32da23f48",
+                "resourcePath": "views\\3c19e4bc-ff85-4d2f-8b3c-c633cac214bb.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
             "Key": "3de357c8-9acd-42e1-98a0-e83c5339d3ab",
             "Value": {
                 "id": "d40f587f-374d-461c-b1d3-e4aa683acb01",
@@ -415,6 +439,22 @@
             }
         },
         {
+            "Key": "50544694-cc68-4876-b865-d688ea86cb49",
+            "Value": {
+                "id": "6cd7d096-588a-4d05-aeb1-b9782e11995b",
+                "resourcePath": "sprites\\spr_GrayDoorLeft\\spr_GrayDoorLeft.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "506ffe5e-83cf-4fbc-85f9-3e4e1203c3b0",
+            "Value": {
+                "id": "7a04bbee-a219-415c-855d-a5dfa103611e",
+                "resourcePath": "views\\506ffe5e-83cf-4fbc-85f9-3e4e1203c3b0.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
             "Key": "51432245-70e2-4b1d-9354-b18cb0629df6",
             "Value": {
                 "id": "ea69b4f5-8742-4474-af86-b15c67cf14e6",
@@ -435,6 +475,14 @@
             "Value": {
                 "id": "e5c9b37d-6724-4265-90c8-5348331778ad",
                 "resourcePath": "sprites\\spr_policePath\\spr_policePath.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "53503045-a8c7-4392-ae25-59cef46b954c",
+            "Value": {
+                "id": "a3d72eca-d0d1-4732-a95d-19d86cb993a8",
+                "resourcePath": "sprites\\spr_GrayDoorRight\\spr_GrayDoorRight.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -500,6 +548,14 @@
                 "id": "e6bd17e0-9b09-46c6-b7c1-fbfe27c91075",
                 "resourcePath": "views\\5b7a7b04-fb80-407a-8c9e-9c12c0895af0.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "5e3b0efb-e21a-4ba0-b117-38ca0fe96713",
+            "Value": {
+                "id": "b82b1d94-532b-4ca3-90d0-8602c04a8312",
+                "resourcePath": "objects\\obj_CrystalContainer\\obj_CrystalContainer.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -604,6 +660,22 @@
                 "id": "86f59d1e-db93-4937-8210-10ebff510aa2",
                 "resourcePath": "timelines\\d1X2\\d1X2.yy",
                 "resourceType": "GMTimeline"
+            }
+        },
+        {
+            "Key": "752a3a22-7576-40c0-931d-c81cdf184398",
+            "Value": {
+                "id": "27a99cd0-89f4-406e-bd43-ca2b0f8fb096",
+                "resourcePath": "sprites\\spr_GrayDoorCenter\\spr_GrayDoorCenter.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "759b4f6c-182d-4e70-897c-ca1109dea215",
+            "Value": {
+                "id": "af826dad-dfe9-48ca-a008-99f417350ea1",
+                "resourcePath": "objects\\obj_Ruby\\obj_Ruby.yy",
+                "resourceType": "GMObject"
             }
         },
         {
