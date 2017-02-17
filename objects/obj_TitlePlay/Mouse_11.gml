@@ -1,4 +1,2 @@
 /// @description Insert description here
-alpha = 1;
-fade = -1;
-click = false;
+image_index = 0;
