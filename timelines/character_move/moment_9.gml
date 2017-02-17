@@ -8,7 +8,7 @@ with(obj_character){
 		sprite_index = spr_Clymene_WalkingDown;
 	}
 	indexOrder += 1;
-	if(position_meeting(x - 25, y - 25, obj_key))
+	if(place_meeting(x - 25, y - 25, obj_key))
 	{
 		obj_key.image_alpha = 0;
 	}

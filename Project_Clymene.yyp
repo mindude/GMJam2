@@ -1071,6 +1071,14 @@
             }
         },
         {
+            "Key": "a50e5f0c-6965-430e-91a5-338f194266ff",
+            "Value": {
+                "id": "59bae7bc-7d5c-4a4e-bf98-e1196ca67db1",
+                "resourcePath": "objects\\obj_ExclamationBubble\\obj_ExclamationBubble.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "a58107a8-2bea-4aef-9ef2-1a2f9149ce89",
             "Value": {
                 "id": "08ba1170-ecca-442a-a1d3-607548de26b6",

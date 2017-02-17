@@ -583,6 +583,8 @@ else if(face_Direction == "right"){
 	}
 }
 
+if(spotted == true) instance_create_layer(x,y-35,"Smoke",obj_ExclamationBubble)
+
 
 
 
