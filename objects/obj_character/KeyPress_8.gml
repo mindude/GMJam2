@@ -13,6 +13,7 @@ if(moving)
 	camera_set_view_speed(view_camera[0], 5, 5);
 	sprite_index = spr_Clymene_WalkingDown;
 	image_speed = 0;
+	spotted = false;
 	with(obj_dollarBill)
 	{
 		instance_destroy();

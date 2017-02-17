@@ -1,4 +1,6 @@
 /// @description Insert description here
+expl = audio_play_sound(explosion, 50, false);
+audio_sound_gain(expl, 0.4, 0);
 vspeed = 0;
 sprite_index = spr_Explosion_Smoke;
 x += 25;

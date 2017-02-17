@@ -586,7 +586,7 @@ else if(face_Direction == "right"){
 if(spotted == true) instance_create_layer(x,y-35,"Smoke",obj_ExclamationBubble)
 
 
-
+//audio_play_sound(detected, 50, false);
 
 
 

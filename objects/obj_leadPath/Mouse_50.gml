@@ -19,6 +19,8 @@ if(global.pathEnabled && !obj_character.moving){
 			{
 				//show_debug_message(ds_list_find_index(obj_character.tempSteps, instance_position(mouse_x, mouse_y, 
 				//obj_path)));
+				ste = audio_play_sound(snd_step, 50, false);
+				audio_sound_gain(ste, 0.5, 0);
 				last_path = instance_create_layer((mouse_x div 50) * 50, (mouse_y div 50) * 50, "Path", obj_path)
 				ds_list_add(obj_character.tempSteps, last_path);
 				if(position_meeting(mouse_x, mouse_y, obj_key) && !obj_character.chosen_key)
