@@ -8,4 +8,8 @@ if(!moving && !mouse_check_button(mb_left)){
 	timeline_loop = false;
 	timeline_running = true;
 	moving = true;
+	obj_leadPath.visible = false;
+	obj_path.visible = false;
+	obj_officerPath.visible = false;
+	obj_chosenPath.visible = false;
 }

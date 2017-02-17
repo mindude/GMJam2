@@ -17,4 +17,16 @@ if(moving)
 	{
 		instance_destroy();
 	}
+	with(obj_Bomb)
+	{
+		instance_destroy();
+	}
+	with(obj_CloudedTile)
+	{
+		instance_destroy();
+	}
+	obj_leadPath.visible = true;
+	obj_path.visible = true;
+	obj_officerPath.visible = true;
+	obj_chosenPath.visible = true;
 }

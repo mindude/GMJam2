@@ -77,7 +77,7 @@ with(obj_character){
 			sprite_index = spr_Clymene_HypnosisSide;
 			image_xscale = 1;
 		}
-		else if(place_meeting(x, y - -50, obj_officer))
+		else if(place_meeting(x, y - 50, obj_officer))
 		{
 			sprite_index = spr_Clymene_HypnosisUp;
 			image_xscale = 1;
@@ -95,5 +95,13 @@ with(obj_character){
 		image_speed = 1;
 		vspeed = 0;
 		hspeed = 0;
+	}
+	else if(ds_list_find_value(orders, indexOrder) == "smoke_bomb")
+	{
+		image_speed = 0;
+		vspeed = 0;
+		hspeed = 0;
+		instance_create_layer(x - 25, y - 25, "Smoke", obj_Bomb);
+		obj_Bomb.vspeed = 1;
 	}
 }

@@ -262,7 +262,7 @@
             "id": "705ef538-67bb-44e5-b650-ab0a7d4eda99",
             "modelName": "GMRInstanceLayer",
             "mvc": "1.0",
-            "depth": -100,
+            "depth": -200,
             "grid_x": 25,
             "grid_y": 25,
             "hierarchyFrozen": false,
@@ -304,6 +304,32 @@
                     "scaleX": 1,
                     "scaleY": 1
                 }
+            ]
+        },
+        {
+            "__type": "GMRInstanceLayer_Model:#YoYoStudio.MVCFormat",
+            "id": "0f5639ca-6c03-4aa0-a8bc-1b32997a4baf",
+            "modelName": "GMRInstanceLayer",
+            "mvc": "1.0",
+            "depth": -100,
+            "grid_x": 25,
+            "grid_y": 25,
+            "hierarchyFrozen": false,
+            "hierarchyVisible": true,
+            "inheritLayerDepth": false,
+            "inheritLayerSettings": false,
+            "inheritSubLayers": false,
+            "inheritVisibility": false,
+            "layers": [
+                
+            ],
+            "m_parentID": "00000000-0000-0000-0000-000000000000",
+            "m_serialiseFrozen": false,
+            "name": "Smoke",
+            "userdefined_depth": false,
+            "visible": true,
+            "instances": [
+                
             ]
         },
         {
