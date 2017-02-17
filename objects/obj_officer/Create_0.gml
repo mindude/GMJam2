@@ -1,5 +1,7 @@
 /// @description Insert description here
 // You can write your code in this editor
+started = false;
+sleep_steps = 100
 is_Walking = false;
 is_Distracted = false;
 starting_point_x = x;

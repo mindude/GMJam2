@@ -262,7 +262,8 @@
         "e0c83b96-66d4-4fba-889c-09985a7f304b",
         "0c060c87-7f0d-4b45-a73a-764f7b762275",
         "66060f21-c1de-4e69-8415-876628fc151f",
-        "7f2c7dd5-0004-4e34-8617-86bc0a554edd"
+        "7f2c7dd5-0004-4e34-8617-86bc0a554edd",
+        "a7631acd-8ece-4fde-a3eb-947debd53063"
     ],
     "layers": [
         {
@@ -663,7 +664,7 @@
                     "m_originalParentID": "00000000-0000-0000-0000-000000000000",
                     "m_serialiseFrozen": false,
                     "name": "inst_4CF3245F",
-                    "x": 800,
+                    "x": 750,
                     "y": 750,
                     "IsDnD": false,
                     "colour": {
@@ -9905,6 +9906,30 @@
                     "creationCodeType": "",
                     "inheritCode": false,
                     "name_with_no_file_rename": "inst_364831AA",
+                    "objId": "a33b0d86-dd5d-4645-a076-697e621b21fc",
+                    "rotation": 0,
+                    "scaleX": 1,
+                    "scaleY": 1
+                },
+                {
+                    "id": "a7631acd-8ece-4fde-a3eb-947debd53063",
+                    "modelName": "GMRInstance",
+                    "mvc": "1.0",
+                    "ignore": false,
+                    "inheritItemSettings": false,
+                    "m_originalParentID": "00000000-0000-0000-0000-000000000000",
+                    "m_serialiseFrozen": false,
+                    "name": "inst_28240C01",
+                    "x": 900,
+                    "y": 750,
+                    "IsDnD": false,
+                    "colour": {
+                        "Value": 4294967295
+                    },
+                    "creationCodeFile": "",
+                    "creationCodeType": "",
+                    "inheritCode": false,
+                    "name_with_no_file_rename": "inst_28240C01",
                     "objId": "a33b0d86-dd5d-4645-a076-697e621b21fc",
                     "rotation": 0,
                     "scaleX": 1,
